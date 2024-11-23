@@ -1,0 +1,100 @@
+.btn {
+  &--primary {
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: $primary-color;
+    text-decoration: none;
+    border: 1px solid $brand-color-dark;
+    border-radius: 7.2rem;
+    padding: 0.61rem 1rem;
+
+    &:hover,
+    :active {
+      background-color: $primary-color;
+      color: $color-white;
+      box-shadow: 0 1rem 3rem rgba($secondary-color, 0.6);
+      transform: scale(1.2);
+    }
+
+    &:active {
+      background-color: $secondary-color;
+      color: $color-white;
+      box-shadow: 0 1rem 3rem rgba($primary-color, 0.6);
+      transform: scale(1.2);
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &--hero {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: $primary-color;
+    color: $grey-color-light;
+    border-radius: 0.9rem;
+    padding: 1rem 1.2rem;
+  }
+
+  &--pr {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: $primary-color;
+    color: $grey-color-light;
+    border-radius: 0.9rem;
+    padding: 1rem 1.2rem;
+    height: 0%;
+    margin-top: 4.4rem;
+
+    @include respond(tab-pot) {
+      margin-top: 2.2rem;
+    }
+  }
+
+  &--r {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: $primary-color;
+    color: $grey-color-light;
+    border-radius: 0.9rem;
+    padding: 1rem 1.2rem;
+    height: 0%;
+    margin-top: 4.4rem;
+  }
+
+  &--inpt {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color-white;
+    color: $color-black;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    height: 0%;
+    margin-top: 4.4rem;
+  }
+
+  &--inpt2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: $color-black;
+    padding: 1rem 2rem;
+    border: none;
+    border-bottom: 1px solid $color-black;
+
+    @include respond(tab-pot) {
+      padding: 1rem 1rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+}

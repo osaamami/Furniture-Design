@@ -1,0 +1,66 @@
+.header {
+  height: 100vh;
+  background-image: url(../img/backg.jpg);
+  background-size: 100%;
+  background-position: top;
+  position: relative;
+  padding: 0 2rem;
+
+  @include respond(phone) {
+    background-image: url(../img/backg.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+  @include respond(tab-pot) {
+    background-image: url(../img/backg.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+  &__content {
+    text-align: center;
+    margin-top: 8rem;
+    &-title {
+      font-size: 6.8rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: $color-black;
+      text-align: center;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+      @include respond(tab-pot) {
+        font-size: 3.8rem;
+      }
+
+      @include respond(phone) {
+        font-size: 3.4rem;
+      }
+    }
+
+    &-pargraph {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+      @include respond(tab-pot) {
+        width: 65%;
+        margin: 1.4rem auto;
+        margin-bottom: 3.4rem;
+      }
+
+      @include respond(phone) {
+        width: 65%;
+        margin: 1.4rem auto;
+      }
+    }
+
+    // &-action {
+    //   margin-top: 2rem;
+    // }
+  }
+}

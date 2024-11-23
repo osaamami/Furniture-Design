@@ -1,0 +1,317 @@
+.products {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    &-prag {
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: $color-black;
+      margin-bottom: 0.8rem;
+    }
+
+    &-heading-primary {
+      font-size: 4.2rem;
+      font-weight: 600;
+      color: $color-black;
+
+      @include respond(tab-pot) {
+        font-size: 2.6rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  &__shots {
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    gap: 3rem;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__shot1 {
+    position: relative;
+
+    &-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    &-contnt1 {
+      height: 15%;
+      background-color: rgba($grey-color-light, 0.66);
+      align-items: center;
+      display: flex;
+      padding: 1.5rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include respond(tab-pot) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        height: 40%;
+      }
+
+      @include respond(phone) {
+        height: 25%;
+      }
+    }
+
+    &-heading-secondry {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-black;
+      margin-bottom: 0.4rem;
+    }
+
+    &-pg {
+      width: 75%;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $color-black;
+
+      @include respond(tab-pot) {
+        width: 85%;
+      }
+
+      @include respond(tab-pot) {
+        width: 70%;
+      }
+    }
+
+    &-price {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+
+      @include respond(tab-pot) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__shot2 {
+    position: relative;
+    width: 98.2%;
+
+    &-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    &-contnt2 {
+      height: 15%;
+      background-color: rgba($grey-color-light, 0.66);
+      align-items: center;
+      display: flex;
+      padding: 1.5rem;
+      position: absolute;
+      bottom: 33%;
+      left: 0;
+
+      @include respond(tab-pot) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        height: 40%;
+      }
+
+      @include respond(phone) {
+        height: 35%;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &-heading-secondry {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-black;
+      margin-bottom: 0.4rem;
+
+      @include respond(tab-pot) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-pg {
+      width: 75%;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $color-black;
+
+      @include respond(tab-pot) {
+        width: 95%;
+      }
+    }
+
+    &-price {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+
+      @include respond(tab-pot) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__shot3 {
+    position: relative;
+
+    &-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    &-contnt3 {
+      height: 25%;
+      background-color: rgba($grey-color-light, 0.66);
+      align-items: center;
+      display: flex;
+      padding: 1.5rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      @include respond(tab-pot) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        height: 55%;
+        bottom: 0%;
+        left: 0;
+      }
+
+      @include respond(phone) {
+        height: 35%;
+      }
+    }
+
+    &-heading-secondry {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-black;
+      margin-bottom: 0.4rem;
+
+      @include respond(tab-pot) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-pg {
+      width: 70%;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $color-black;
+
+      @include respond(tab-pot) {
+        width: 85%;
+      }
+    }
+
+    &-price {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+
+      @include respond(tab-pot) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__shot4 {
+    position: relative;
+    margin-top: -18rem;
+    width: 98.2%;
+
+    @include respond(tab-pot) {
+      margin-top: -9rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 0;
+    }
+
+    &-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    &-contnt4 {
+      height: 15%;
+      background-color: rgba($grey-color-light, 0.66);
+      align-items: center;
+      display: flex;
+      padding: 1.5rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @include respond(tab-pot) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        height: 40%;
+      }
+
+      @include respond(phone) {
+        height: 25%;
+      }
+    }
+
+    &-heading-secondry {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-black;
+      margin-bottom: 0.4rem;
+    }
+
+    &-pg {
+      width: 75%;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $color-black;
+    }
+
+    &-price {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+
+      @include respond(tab-pot) {
+        margin-top: 0;
+      }
+    }
+  }
+}

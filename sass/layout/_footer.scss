@@ -1,0 +1,174 @@
+.footer {
+  padding: 8.5rem 5.4rem;
+  background-color: $grey-color-light-2;
+  @include respond(phone) {
+    padding: 7.5rem 3rem;
+  }
+}
+
+.container {
+  @include respond(phone) {
+  }
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* four equal columns */
+  grid-template-rows: auto; /* Rows adjust dynamically */
+  grid-gap: 2rem; /* Space between grid items */
+
+  @include respond(phone) {
+    display: flex; /* Switch to flexbox for better control */
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Add space between items */
+  }
+}
+
+.copyright {
+  margin-top: 20rem;
+
+  @include respond(phone) {
+    margin-top: 10rem;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
+
+.info {
+  &__text {
+    font-size: 1.2rem;
+    width: 75%;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  &__head4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  &__items {
+    list-style: none;
+  }
+
+  &__lnk {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: $color-black;
+    font-weight: 600;
+  }
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  &__head4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  &__items {
+    list-style: none;
+  }
+  &__lnk {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: $color-black;
+    font-weight: 600;
+  }
+}
+
+.newslatter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  &__message {
+    @include respond(tab-pot) {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+  }
+
+  &__news {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  &__input {
+    width: 50%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $brand-color-dark-2;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    margin-right: 2rem;
+
+    &::placeholder {
+      font-size: 1.3rem;
+      font-family: "Montserrat", sans-serif;
+      color: $color-black;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $brand-color-dark-2;
+      border-color: $grey-color-light;
+      box-shadow: 0 0 5px rgba($grey-color-light, 0.5);
+    }
+
+    @include respond(tab-pot) {
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      width: 50%;
+    }
+  }
+}
+
+.line {
+  width: 100%;
+  color: $brand-color-dark-2;
+}

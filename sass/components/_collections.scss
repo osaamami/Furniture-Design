@@ -1,0 +1,53 @@
+.collection {
+  &__contents {
+    text-align: center;
+    margin-bottom: 4rem;
+    &-heading-primary {
+      font-size: 4.4rem;
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+
+      @include respond(phone) {
+        font-size: 2.8rem;
+      }
+    }
+
+    &-prag {
+      font-size: 1.4rem;
+      font-weight: 300;
+
+      @include respond(phone) {
+        width: 75%;
+        margin: 1.3rem auto;
+      }
+    }
+  }
+
+  &__images {
+    display: flex;
+    gap: 2.3rem;
+
+    @include respond(phone) {
+      display: block;
+    }
+
+    &-card {
+      text-align: center;
+    }
+    // paragraph of the image collenctions.
+    &-p {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-top: 1.4rem;
+
+      @include respond(phone) {
+        margin-top: 0.8rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+}

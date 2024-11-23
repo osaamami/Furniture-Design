@@ -1,0 +1,35 @@
+/*
+phone only is 0-----600px
+tablet potrait is 600px-----900px
+tablet landscape is 900-----1200px
+Desktop is 1200px----1800px
+BigDesktop is 1800ox-------1920px
+
+1em - 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-pot {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112em) {
+      @content;
+    }
+  }
+}
